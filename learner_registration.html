@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Learner Registration</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-container w3-center w3-teal">
+  <h1>Learner Registration</h1>
+  
+</div>
+    <form action="learner_registration.php" method="post">
+        <label for="learner_name">Learner Name:</label>
+        <input type="text" id="learner_name" name="learner_name" required><br>
+        <label for="learner_surname">Learner Surname:</label>
+        <input type="text" id="learner_surname" name="learner_surname" required><br>
+        <label for="learner_cellphone">Learner Cellphone Number:</label>
+        <input type="tel" id="learner_cellphone" name="learner_cellphone" required><br>
+        <label for="grade">Grade:</label>
+        <input type="number" id="grade" name="grade" required><br>
+		
+        <label for="bus_number">Bus Number:</label>
+        <select id="bus_number" name="bus_number">
+            <option value="1">Rooihuiskraal/The Reeds</option>
+            <option value="2">Wierdapark/Amberfield</option>
+            <option value="3">Centurion</option>
+        </select><br>
+		
+		<label for="pickup_option">PickupOption:</label>
+        <select id="pickup_option" name="pickup_option">
+            <option value="morning_pickup">Morning Pickup</option>
+            <option value="evening_pickup">Evening Pickup</option>
+            <option value="both">Both Morning & Evening</option>
+        </select><br>
+		
+		<p style="font-weight: bold;">Please choose pickup number and time, keep note of Bus number to make sure its correspond  </p>
+		
+		<label for="pickup_time">PickupTime:</label>
+        <select id="pickup_time" name="pickup_time">
+		    <option value="select">SELECT TIME</option>
+            <option value="1A-6:22">1A</option>
+            <option value="1B-6:30">1B</option>
+			<option value="2A-6:25">2A</option>
+            <option value="2B-6:35">2B</option>
+			<option value="3A-6:20">3A</option>
+			<option value="3B-6:40">3B</option>
+        </select><br>
+		
+		<p style="font-weight: bold;">Please choose drop off number and time, keep note of Bus number to make sure its correspond  </p>
+		
+		<label for="dropoff_time_">DropOffTime:</label>
+        <select id="dropoff_time" name="dropoff_time">
+		    <option value="Select">SELECT TIME</option>
+            <option value="1A-14:30">1A</option>
+            <option value="1B-14:39">1B</option>
+			<option value="2A-14:35">2A</option>
+            <option value="2B-14:30">2B</option>
+			<option value="3A-14:30">3A</option>
+			<option value="3B-14:40">3B</option>
+        </select><br>
+		
+		<p style="font-weight: bold;">Please choose pickup name and time, keep note of Bus number to make sure its correspond  </p>
+		
+		<label for="pickup_name">PickupName:</label>
+        <select id="pickup_name" name="pickup_name">
+		    <option value="Select">SELECT NAME</option>
+            <option value="Corner of Panorama and Marabou Road">Panorama</option>
+            <option value="Corner of Kolgansstraat and Skimmerstraat">Kolgansstraat</option>
+            <option value="Corner of Reddersburg Street and Mafeking Drive">Reddersburg</option>
+			<option value="Corner of Theuns van Niekerkstraat and Roosmarynstraat">Theuns</option>
+			<option value="Corner of Jasper Drive and Tieroog Street">Jasper</option>
+			<option value="Corner of Louise Street and Von Willich Drive">Louise</option>
+        </select><br>
+		
+		<p style="font-weight: bold;">Please choose drop off name, keep note of Bus number to make sure its correspond  </p>
+		
+		<label for="dropoff_name">DropoffName:</label>
+        <select id="dropoff_name" name="dropoff_name">
+		    <option value="Select">SELECT NAME</option>
+            <option value="Corner of Panorama and Marabou Road">Panorama</option>
+            <option value="Corner of Kolgansstraat and Skimmerstraat">Kolgansstraat</option>
+            <option value="Corner of Reddersburg Street and Mafeking Drive">Reddersburg</option>
+			<option value="Corner of Theuns van Niekerkstraat and Roosmarynstraat">Theuns</option>
+			<option value="Corner of Jasper Drive and Tieroog Street">Jasper</option>
+			<option value="Corner of Louise Street and Von Willich Drive">Louise</option>
+        </select><br>
+		
+	
+        <input type="submit" value="Register Learner">
+    </form>
+</body>
+</html>

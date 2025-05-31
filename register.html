@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;  //css for register page
+  background-color: black;
+}
+* {
+  box-sizing: border-box;
+ 
+}
+/* Add padding to containers */
+.container {
+  padding: 5px;
+  background-color: white;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #66CDAA;
+  color: black;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "log in" section */
+.login {
+  background-color: #808080;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Register</h1>
+  <p>Please fill in this form to create an account.</p>
+  <form action="login.php" method="post"> <!-- Added <form> element -->
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+    
+    <label for="surname"><b>Surname</b></label>
+    <input type="text" placeholder="Enter Surname" name="surname" id="surname" required>
+    
+    <label for="cellphone"><b>Cellphone</b></label>
+    <input type="text" placeholder="Enter Cellphone" name="cellphone" id="cellphone" required>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" id="email" required>
+    
+	<form method="POST" action="learner_registration.html">
+    <button type="submit" class="register">Register</button>
+	</form> 
+	
+  </form>
+</div>
+
+  
+  <div class="container login">
+    <p>Already have an account? Login below</p>
+	<?php include 'login.html'; ?>
+	
+  </div>
+</form>
+
+</body>
+</html>
